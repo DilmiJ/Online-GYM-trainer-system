@@ -1,0 +1,84 @@
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.about {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-left:  900px;
+    width: 550px;
+    margin-top: -280px;
+    margin-bottom: 50px;
+}
+.bmi {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 300px;
+}
+
+.topbar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.topbar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-value {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.profile-value b {
+    font-weight: bold;
+    color: #333;
+}
+
+h1{
+    color: #fff;
+}
+
+.headn {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    margin: 10px 0;
+}
+.topbar a:hover {
+    color: #f0f0f0;
+}

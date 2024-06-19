@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose a Plan</title>
+    <link rel="stylesheet" href="Styles/plan.css">
+    <link rel="stylesheet" href="Styles/AllStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header>
+        <ul>
+            <li><img src="images/MLB.png" alt="logo"></li>
+            <li><a class="menu" href="home.html">HOME</a></li>
+            <li><a class="menu" href="Training.html">TRANING</a></li>
+            <li><a class="menu" href="meal.html">MEAL</a></li>
+            <li><a class="menu" href="Aboutus.html">ABOUT US</a></li>
+            <li class="active"><a class="menu" href="plan select page.html">GO PRIMIUM</a></li>
+            <li><a class="menu" href="FAQ.html">FAQ</a></li>
+            <li id="pro_pic"><a href="user_profile.php"><img src="images/profile/Profile-PNG-File.png"></a>
+            <li id="login"><a class="menu" href="login_member.html">LOGIN/SIGNUP</a></li>
+        </ul>
+    </header>
+    <h1>Choose a Plan</h1>
+    
+    <form>
+        <label for="freePlan">
+            <input type="radio" id="freePlan" name="plan" value="free">
+            Free Plan
+        </label>
+        
+        <br>
+        
+        <label for="premiumPlan">
+            <input type="radio" id="premiumPlan" name="plan" value="premium">
+            Premium Plan
+        </label>
+        
+        <div id="premiumOptions" style="display: none;">
+            <h3>Premium Packages</h3>
+            
+            <label for="annualPackage">
+                <input type="radio" id="annualPackage" name="premiumOption" value="annual">
+                Annual Package (120000 LKR/year)
+            </label>
+        
+            <br>
+            
+            <label for="sixMonthsPackage">
+                <input type="radio" id="sixMonthsPackage" name="premiumOption" value="sixmonths">
+                6 Months Package (70000 LKR/6 months)
+            </label>
+            
+            <br>
+            
+            <label for="monthlyPackage">
+                <input type="radio" id="monthlyPackage" name="premiumOption" value="monthly">
+                Monthly Package (15000 LKR/month)
+            </label>
+        </div>
+        
+        <br><br>
+        
+        <button type="submit">Select Plan</button>
+    </form>
+    
+    <!-- Information for Free Plan Users -->
+    <div id="freePlanInfo" style="display: none;">
+        <p>Thank you for choosing the Free Plan. Please note that the Free Plan offers basic features and does not include access to Premium Packages, personalized workouts, or live virtual classes.</p>
+    </div>
+    
+    <!-- Premium Plan Features -->
+    <div id="premiumFeatures" style="display: none;">
+        <h2>Premium Plan Features</h2>
+        <ul>
+            <li>Personalized Workout Plans:</li>
+            <ul>
+                <li>Tailored exercise routines based on individual fitness goals and fitness levels.</li>
+                <li>Customized workout schedules that adapt over time as users progress.</li>
+            </ul>
+            <li>Ad-Free Experience:</li>
+            <ul>
+                <li>Access to live virtual fitness classes with certified trainers.</li>
+                <li>Interactive sessions that allow users to ask questions and get real-time feedback.</li>
+            </ul>
+            
+                <li>Personalized Coaching:</li>
+                <ul>
+                    <li>One-on-one coaching or virtual personal training sessions with experienced trainers.</li>
+                </ul>
+                <li>Live Virtual Classes:</li>
+                <ul>
+                    <li>Ad-free browsing and video streaming for premium subscribers.</li>
+                </ul>
+                <li>On-Demand Video Library:</li>
+                <ul>
+                    <li>A comprehensive library of workout videos, including various fitness styles (e.g., yoga, HIIT, strength training).</li>
+                    <li>Offline access to videos for premium subscribers.</li>
+                </ul>
+                <li>Nutritional Guidance:</li>
+                <ul>
+                    <li>Personalized meal plans and dietary recommendations.</li>
+                    <li>Access to nutritionists or dietitians for consultation.</li>
+                </ul>
+        </ul>
+    </div>
+    
+    <h2>Plan Details</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Plan</th>
+                <th>Price</th>
+                <th>Features</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="freePlanDetails">
+                <td>Free Plan</td>
+                <td>0 USD</td>
+                <td>Basic features</td>
+            </tr>
+            <tr id="annualPackageDetails" style="display: none;">
+                <td>Annual Package</td>
+                <td>120000 LKR/year</td>
+                <td>Advanced features for 1 year</td>
+            </tr>
+            <tr id="sixMonthsPackageDetails" style="display: none;">
+                <td>6 Months Package</td>
+                <td>70000 LKR/6 months</td>
+                <td>Advanced features for 6 months</td>
+            </tr>
+            <tr id="monthlyPackageDetails" style="display: none;">
+                <td>Monthly Package</td>
+                <td>15000 LKR/month</td>
+                <td>Advanced features on a monthly basis</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <p>Your selection: <span id="planSelected">No plan selected</span></p>
+<button id="payButton">Pay for Package</button>
+
+
+<script>
+    
+    document.getElementById('payButton').addEventListener('click', function() {
+        
+        window.location.href = 'paypage.php'; 
+    });
+</script>
+
+
+    <script>
+        
+        const form = document.querySelector('form');
+        const planSelected = document.getElementById('planSelected');
+        const premiumOptions = document.getElementById('premiumOptions');
+        const annualPackageDetails = document.getElementById('annualPackageDetails');
+        const sixMonthsPackageDetails = document.getElementById('sixMonthsPackageDetails');
+        const monthlyPackageDetails = document.getElementById('monthlyPackageDetails');
+        const freePlanInfo = document.getElementById('freePlanInfo');
+        const premiumFeatures = document.getElementById('premiumFeatures');
+        
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            const selectedPlan = document.querySelector('input[name="plan"]:checked');
+            const selectedPremiumOption = document.querySelector('input[name="premiumOption"]:checked');
+            
+            if (selectedPlan) {
+                planSelected.textContent = `Selected plan: ${selectedPlan.value.charAt(0).toUpperCase() + selectedPlan.value.slice(1)}`;
+                
+                if (selectedPlan.value === 'premium') {
+                    premiumOptions.style.display = 'block';
+                    freePlanInfo.style.display = 'none';
+                    premiumFeatures.style.display = 'block'; 
+                    
+                    if (selectedPremiumOption) {
+                        if (selectedPremiumOption.value === 'annual') {
+                            annualPackageDetails.style.display = 'table-row';
+                            sixMonthsPackageDetails.style.display = 'none';
+                            monthlyPackageDetails.style.display = 'none';
+                        } else if (selectedPremiumOption.value === 'sixmonths') {
+                            annualPackageDetails.style.display = 'none';
+                            sixMonthsPackageDetails.style.display = 'table-row';
+                            monthlyPackageDetails.style.display = 'none';
+                        } else if (selectedPremiumOption.value === 'monthly') {
+                            annualPackageDetails.style.display = 'none';
+                            sixMonthsPackageDetails.style.display = 'none';
+                            monthlyPackageDetails.style.display = 'table-row';
+                        }
+                    }
+                } else {
+                    premiumOptions.style.display = 'none';
+                    annualPackageDetails.style.display = 'none';
+                    sixMonthsPackageDetails.style.display = 'none';
+                    monthlyPackageDetails.style.display = 'none';
+                    freePlanInfo.style.display = 'block';
+                    premiumFeatures.style.display = 'none'; 
+                }
+            } else {
+                planSelected.textContent = 'No plan selected';
+                premiumOptions.style.display = 'none';
+                annualPackageDetails.style.display = 'none';
+                sixMonthsPackageDetails.style.display = 'none';
+                monthlyPackageDetails.style.display = 'none';
+                freePlanInfo.style.display = 'none';
+                premiumFeatures.style.display = 'none'; 
+            }
+        });
+    </script>
+    <footer>
+        <div class="footerContainer">
+            <div class="logo">
+                <img src="images/MLB.png" alt="logo">
+            </div>
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="contactus.php">Contact Us</a></li>
+                    <li><a href="Terms and condition.html">Terms and Conditions</a></li>
+                    <li><a href="Aboutus.html">Privacy policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>copyright &copy;Group MLB_WD_01.01_06. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

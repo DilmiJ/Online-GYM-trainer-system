@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+     background-image:linear-gradient(rgba(0, 0, 0, 0.502), rgba(0, 0, 0, 0.474)), url("../images/Gym14.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     
+     align-items: center;
+     text-align: center;
+     min-height: 100vh;
+}
+
+.chose-form{
+     height: 100px;
+     width: 400px;
+     margin: auto;
+     margin-top: 100px;
+     padding: 15px;   
+     background: transparent;
+     backdrop-filter: blur(20px);
+     border-radius: 20px;
+     border: 2px solid rgba(31, 89, 216, 0.767);
+     box-shadow: 0px 0px 30px rgba(31, 89, 216, 0.767); 
+     font-family: "Poppins", sans-serif; 
+}
+
+.sign-form{
+     width: 450px;
+     margin: 30px auto; 
+     padding: 20px;
+     background: transparent;
+     backdrop-filter: blur(8px);
+     border: 2px solid rgba(31, 89, 216, 0.767);
+     box-shadow: 0px 0px 30px rgba(31, 89, 216, 0.767);
+     border-radius: 8px;
+     margin-bottom: 100px;
+     font-family: "Poppins", sans-serif; 
+}
+
+h2{
+     color: #fff;
+     margin: -5px 0 25px 0;
+}
+
+.musername,
+.password{
+     position: absolute;
+     margin-left: 0px;     
+}
+
+label{
+     font-weight: bold;
+}
+
+label[for="or"]{
+     padding: 0 20px;
+     font-size: 16px;
+     font-weight: bold;
+     color: #fff;
+}
+
+
+button[class="member-button"],
+button[class="trainer-button"]{
+     font-size: 16px;
+     padding: 2px 15px;
+     background-color: rgb(94, 94, 202);
+     color: white;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     font-family: "Poppins", sans-serif;
+}
+
+button[class="member-button"]:hover,
+button[class="trainer-button"]:hover{
+     transform: scale(1.1);
+     background-color: rgb(44, 88, 211);  
+}
+
+input[type="text"],
+input[type="password"] {
+     width: 280px;
+     padding: 15px 0 5px 20px;
+     margin: 20px 0;
+     border-radius: none;
+     border: none;
+     outline: none;
+     background: transparent;
+     border-bottom: 2px solid black;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder{
+     color: rgb(224, 217, 217);
+     font-family: "Poppins", sans-serif;
+}
+
+label[for="remember-me"] {
+     display: block;
+     font-size: small;
+     margin: -19px 190px 0 0;
+     font-weight: unset;
+}
+
+#login-button {
+     margin-top: 20px;
+     font-size: 18px; 
+     font-weight: bold;
+     padding: 15px 100px; 
+     background-color: rgb(36, 157, 36);
+     color: #fff; 
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+}
+
+#login-button:hover{
+     background-color: rgba(107, 233, 107, 0.627);
+}
+
+#joinnow-button {
+     font-size: 18px; 
+     font-weight: bold;
+     padding: 15px 100px; 
+     margin-top: -30px;
+     background-color: blue; 
+     color: #fff; 
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+}
+
+#joinnow-button:hover{
+     background-color: rgba(68, 68, 190, 0.699);
+}
+
+#frogot{ 
+     margin: -20px 0 0 140px;
+     font-size: small;
+}
+
+a{
+     text-decoration: none;
+}
+
+a:hover{
+     text-decoration: underline
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.about {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-left:  950px;
+  width: 430px;
+  margin-top: -290px;
+  margin-bottom: 90px;
+}
+.bmi {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  margin-left: 490px;
+}
+
+.topbar {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  border-radius: 5px;
+  margin-top: 60px;
+  margin-left: 400px;
+  margin-right: 400px;
+  
+}
+
+.topbar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile-value {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.profile-value b {
+  font-weight: bold;
+  color: #333;
+}
+
+h1{
+  color: #fff;
+}
+
+b{
+  margin-left: 15px;
+}
+
+.headn {
+  color: #8f5454;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.topbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  margin: 10px 0;
+}
+
+
+#logout {
+  font-size: 16px; 
+  font-weight: bold;
+  padding: 9px 14px; 
+  background-color: rgb(229, 29, 14);
+  color: #fff; 
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  margin-left: 1700px;
+  margin-top: -390px;
+  position: absolute;
+
+}
+
+#logout:hover {
+  background-color: #7c1310;
+  transform: scale(1.1);
+}
+
+#update {
+  background-color: #113be6;
+  color: #fff;
+  border: none;
+  padding: 7px 13px;
+  display: flex;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+  margin-left: 900px;
+  margin-top: 300px;
+  position: absolute;
+}
+
+#update:hover {
+  background-color: #130d66;
+  transform: scale(1.05);
+}
+
+#delete {
+  background-color: #e61111f2;
+  color: #fff;
+  border: none;
+  padding: 7px 13px;
+  display: flex;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+  margin-left: 1250px;
+  margin-top: -70px;
+  position: absolute;
+}
+
+#delete:hover {
+  background-color: #7c1310;
+  transform: scale(1.05);
+}

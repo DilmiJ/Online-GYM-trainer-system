@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body
+{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.197), rgba(0, 0, 0, 0.363)), url('../images/gym16.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.updateprofile
+{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-info
+{
+  display:flex;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border-radius: 20px;
+}
+
+.profile-left{
+  flex-direction: row;
+  margin-left: 100px;
+}
+
+.profile-right{
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.profile-value{
+  margin-top: 40px;
+}
+
+b{
+  color: #fff;
+}
+
+#cancel {
+  background-color: #028a78;
+  color: #fff;
+  border: none;
+  padding: 7px 13px;
+  display: flex;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+  margin-left: 150px;
+  margin-bottom: 30px;
+}
+
+#cancel:hover {
+  background-color: #24a699;
+  transform: scale(1.1);
+}
+
+#update {
+  background-color: #113be6;
+  color: #fff;
+  border: none;
+  padding: 7px 13px;
+  display: flex;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+  margin-left: 500px;
+  margin-bottom: 30px;
+}
+
+#update:hover {
+  background-color: #130d66;
+  transform: scale(1.05);
+}
+
+.update{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.profile-info {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  background: transparent;
+  backdrop-filter:blur(20px);
+  border-radius: 20px;
+  border: 2px solid rgba(31, 89, 216, 0.767);
+  box-shadow: 0px 0px 30px rgba(31, 89, 216, 0.767); 
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.profile-value {
+  margin-bottom: 7px;
+}
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

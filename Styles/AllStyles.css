@@ -1,0 +1,175 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-color: black;
+    padding: 10px;
+    box-shadow: 0 0 10px purple;
+    text-align: center;
+}
+
+header li
+{
+    display: inline;
+    padding-left: 45px;
+    font-size: 20px;
+}
+
+.menu
+{
+    color: white;
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 30px;
+    transition: .3s ease;
+}
+
+.menu:hover
+{
+    background-color: red;
+}
+
+header ul #login a
+{
+    color: #fff;
+    background-color: purple;
+    border-radius: 30px;
+    float: right;
+    position: relative;
+    top: -15px;
+    transition: .3s ease;
+}
+
+header ul #login a:hover
+{
+    background-color: red;
+}
+
+header li img
+{
+    width: 110px;
+    float: left;
+    margin-top: -20px;
+}
+
+#active 
+{
+    background-color: red;
+    border-radius: 30px;
+    padding: 13px;
+}
+
+#pro_pic 
+{
+    float:right;
+    position: relative;
+}
+
+#pro_pic a img
+{
+    width: 60px;
+}
+
+footer
+{
+    background-color: black;
+}
+
+.logo img
+{
+    width: 200px;
+}
+
+.logo
+{
+    display: flex;
+    justify-content: center;
+    padding-right: 70px;
+}
+
+.footerContainer
+{
+    width: 100%;
+    padding: 20px 0px 20px;
+}
+
+
+
+.socialIcons
+{
+    display: flex;
+    justify-content: center;
+    padding-right: 60px;
+}
+
+.socialIcons a
+{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i
+{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover
+{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a i:hover
+{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav
+{
+    margin: 10px;
+    padding-right: 70px;
+}
+
+.footerNav ul
+{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a
+{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footerNav ul li a:hover
+{
+    opacity: 1;
+}
+
+.footerBottom
+{
+    background-color: black;
+    padding: 2px;
+    text-align: center;
+}
+
+.footerBottom p
+{
+    color: white;
+    margin-top: -20px;
+}
